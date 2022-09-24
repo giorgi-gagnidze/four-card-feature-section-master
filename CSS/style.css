@@ -4,7 +4,145 @@
   box-sizing: border-box;
 }
 
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
 body {
-  font-family: Poppins, sans serif;
-  font-size: 15px;
+  font-family: Poppins, "sans serif";
+  font-size: 0.9375rem;
+  background-color: var(--very-light-gray);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 70%;
+}
+
+.main-article__container {
+  text-align: center;
+  padding: 0 18.75rem;
+}
+
+.main-heading {
+  font-size: 1.875rem;
+  font-weight: 200;
+}
+
+.second-heading {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.main-article {
+  font-size: 0.875rem;
+  font-weight: 200;
+  margin: 1.25rem 0 3.125rem;
+}
+
+.grid-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.grid-item-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-top: 25%;
+}
+
+.grid-item-3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.grid-item-4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-top: 25%;
+}
+
+.card-container {
+  width: 18.75rem;
+  height: 12.5rem;
+  border-radius: 0.625rem;
+}
+
+.middle-container-1 {
+  margin: 1.5625rem auto;
+}
+
+.middle-container-2 {
+  margin: 0 auto;
+}
+
+.double-container {
+  align-items: center;
+  margin-bottom: 0.625rem;
+}
+
+.float-right {
+  margin-left: 16%;
+}
+
+.line-cyan {
+  border-top: 0.3125rem solid var(--cyan);
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+}
+
+.line-red {
+  border-top: 0.3125rem solid var(--red);
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+}
+
+.line-orange {
+  border-top: 0.3125rem solid var(--orange);
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+}
+
+.line-blue {
+  border-top: 0.3125rem solid var(--blue);
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+}
+
+.card-article {
+  margin: 0.9375rem 3.125rem 0 0.9375rem;
+}
+
+.card-article__heading {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.card-article__text {
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.img-container {
+}
+
+.img {
+  margin-left: 75%;
+  margin-top: 10%;
+}
+
+.container-shadow {
+  box-shadow: 0.3125rem 0.3125rem 1.25rem lightgray;
 }
