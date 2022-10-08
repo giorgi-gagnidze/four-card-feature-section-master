@@ -147,6 +147,10 @@ body {
   box-shadow: 5px 5px 20px lightgray;
 }
 
+.double-container {
+  margin: 0 50px 0 90px;
+}
+
 @media only screen and (max-width: 600px) {
   .main-container {
     display: flex;
@@ -168,5 +172,9 @@ body {
     grid-column-start: 3;
     grid-column-end: 4;
     margin-top: 15px;
+  }
+
+  .double-container {
+    margin: 0px;
   }
 }
